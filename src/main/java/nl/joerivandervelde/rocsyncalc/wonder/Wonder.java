@@ -1,19 +1,19 @@
-package nl.joerivandervelde.rocsyncalc;
+package nl.joerivandervelde.rocsyncalc.wonder;
 
-import nl.joerivandervelde.rocsyncalc.wonderprops.Bonus;
-import nl.joerivandervelde.rocsyncalc.wonderprops.WonderAge;
-import nl.joerivandervelde.rocsyncalc.wonderprops.WonderLocation;
-import nl.joerivandervelde.rocsyncalc.wonderprops.WonderType;
+import nl.joerivandervelde.rocsyncalc.wonder.properties.Bonus;
+import nl.joerivandervelde.rocsyncalc.wonder.properties.WonderAge;
+import nl.joerivandervelde.rocsyncalc.wonder.properties.WonderLocation;
+import nl.joerivandervelde.rocsyncalc.wonder.properties.WonderType;
 
 import java.util.Set;
 
 public class Wonder {
 
-    private String name;
-    private WonderLocation wonderLocation;
-    private WonderAge wonderAge;
-    private Set<WonderType> wonderType;
-    private WonderType boostedByType;
+    private final String name;
+    private final WonderLocation wonderLocation;
+    private final WonderAge wonderAge;
+    private final Set<WonderType> wonderType;
+    private final WonderType boostedByType;
     private Bonus bonusOne;
     private Bonus bonusTwo;
     private Bonus boosted;
@@ -37,10 +37,6 @@ public class Wonder {
         return wonderLocation;
     }
 
-    public WonderAge getWonderAge() {
-        return wonderAge;
-    }
-
     public Set<WonderType> getWonderType() {
         return wonderType;
     }
@@ -61,32 +57,8 @@ public class Wonder {
         return boosted;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setWonderLocation(WonderLocation wonderLocation) {
-        this.wonderLocation = wonderLocation;
-    }
-
-    public void setWonderAge(WonderAge wonderAge) {
-        this.wonderAge = wonderAge;
-    }
-
-    public void setWonderType(Set<WonderType> wonderType) {
-        this.wonderType = wonderType;
-    }
-
-    public void setBoostedByType(WonderType boostedByType) {
-        this.boostedByType = boostedByType;
-    }
-
     public void setBonusOne(Bonus bonusOne) {
         this.bonusOne = bonusOne;
-    }
-
-    public void setBonusTwo(Bonus bonusTwo) {
-        this.bonusTwo = bonusTwo;
     }
 
     public void setBoosted(Bonus boosted) {

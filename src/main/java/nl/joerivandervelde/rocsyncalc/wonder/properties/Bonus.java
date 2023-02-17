@@ -1,4 +1,4 @@
-package nl.joerivandervelde.rocsyncalc.wonderprops;
+package nl.joerivandervelde.rocsyncalc.wonder.properties;
 
 public enum Bonus {
     ECONOMY,

@@ -1,4 +1,4 @@
-package nl.joerivandervelde.rocsyncalc.wonderprops;
+package nl.joerivandervelde.rocsyncalc.wonder.properties;
 
 public enum WonderType {
     STATUE,
@@ -8,5 +8,5 @@ public enum WonderType {
     NAVAL,
     ARENA,
     FORTRESS,
-    EMPTY
+    UNBOOSTED
 }
