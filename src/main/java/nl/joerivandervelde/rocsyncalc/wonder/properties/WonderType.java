@@ -8,5 +8,5 @@ public enum WonderType {
     NAVAL,
     ARENA,
     FORTRESS,
-    UNBOOSTED
+    UNSYNERGIZED
 }

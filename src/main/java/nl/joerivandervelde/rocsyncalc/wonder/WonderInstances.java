@@ -28,7 +28,7 @@ public class WonderInstances {
         this.allWonders.add(new Wonder("Abu Simbel", ALLIED_CULTURES, ANCIENT_WORLD, new HashSet<>(Arrays.asList(PALACE)), PALACE, MILITARY, RESEARCH, RESEARCH));
         this.allWonders.add(new Wonder("Tomb of Mausolus", CAPITAL_CITY, ANCIENT_WORLD, new HashSet<>(Arrays.asList(TEMPLE)), TEMPLE, RESEARCH, ECONOMY, ECONOMY));
         this.allWonders.add(new Wonder("Lighthouse of Alexandria", CAPITAL_CITY, ANCIENT_WORLD, new HashSet<>(Arrays.asList(NAVAL, TEMPLE)), NAVAL, ECONOMY, ECONOMY, ECONOMY));
-        this.allWonders.add(new Wonder("Hagia Sophia", CAPITAL_CITY, GREAT_EMPIRES, new HashSet<>(Arrays.asList(TEMPLE)), UNBOOSTED, RESEARCH, ECONOMY, NONE));
+        this.allWonders.add(new Wonder("Hagia Sophia", CAPITAL_CITY, GREAT_EMPIRES, new HashSet<>(Arrays.asList(TEMPLE)), UNSYNERGIZED, RESEARCH, ECONOMY, NONE));
         this.allWonders.add(new Wonder("Colosseum", CAPITAL_CITY, GREAT_EMPIRES, new HashSet<>(Arrays.asList(ARENA, FORTRESS)), STATUE, MILITARY, ECONOMY, MILITARY));
         this.allWonders.add(new Wonder("Palace of Aachen", CAPITAL_CITY, GREAT_EMPIRES, new HashSet<>(Arrays.asList(FORTRESS, PALACE)), FORTRESS, MILITARY, ECONOMY, MILITARY));
         this.allWonders.add(new Wonder("Sherwood Forest", CAPITAL_CITY, GREAT_EMPIRES, new HashSet<>(Arrays.asList(FORTRESS, NATURE)), FORTRESS, MILITARY, RESEARCH, MILITARY));
@@ -58,18 +58,16 @@ public class WonderInstances {
 
     public void removeBadBonuses()
     {
-
         // Boosts the Hit Points of all of your Ranged Units
-        this.allWondersByName.get("Sherwood Forest").setBonusOne(NONE);
+        this.allWondersByName.get("Sherwood Forest").setSelfBonusOne(NONE);
 
         // Boosts the Hit Points of all of your Ranged Units by 2.0% extra per every other active Fortress
-        this.allWondersByName.get("Sherwood Forest").setBoosted(NONE);
+        this.allWondersByName.get("Sherwood Forest").setSynergyBonus(NONE);
 
         // Boosts the Hit Points of all of your Bastion Units
-        this.allWondersByName.get("Sayil Palace").setBonusOne(NONE);
+        this.allWondersByName.get("Sayil Palace").setSelfBonusOne(NONE);
 
         // Boosts the Damage of all of your Bastion Units by 2.0% extra per every other active Fortress
-        this.allWondersByName.get("Sayil Palace").setBoosted(NONE);
-
+        this.allWondersByName.get("Sayil Palace").setSynergyBonus(NONE);
     }
 }

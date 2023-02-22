@@ -3,12 +3,11 @@ package nl.joerivandervelde.rocsyncalc.synergy;
 import net.steppschuh.markdowngenerator.table.TableRow;
 import nl.joerivandervelde.rocsyncalc.wonder.Wonder;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class BonusCounts {
+public class Bonuses {
 
     public int economy;
     public int military;

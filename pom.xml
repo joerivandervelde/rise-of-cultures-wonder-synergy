@@ -21,7 +21,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     </build>
     <packaging>jar</packaging>
 
-    <name>Calculate optimal wonder synergy for Rise of Cultures</name>
+    <name>Calculate highest wonder bonus synergy for Rise of Cultures</name>
     <url>https://github.com/joerivandervelde/rise-of-cultures-wonder-synergy</url>
 
     <dependencies>

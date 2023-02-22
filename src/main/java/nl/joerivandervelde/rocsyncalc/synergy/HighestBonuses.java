@@ -6,70 +6,70 @@ import net.steppschuh.markdowngenerator.table.TableRow;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static nl.joerivandervelde.rocsyncalc.synergy.FindOptimalSynergy.totalSynergy;
+import static nl.joerivandervelde.rocsyncalc.synergy.FindHighestBonusCombinations.totalBonuses;
 
-public class Synergy {
+public class HighestBonuses {
 
-    private ArrayList<BonusCounts> highestOverall;
-    private ArrayList<BonusCounts> highestEconomy;
-    private ArrayList<BonusCounts> highestMilitary;
-    private ArrayList<BonusCounts> highestResearch;
+    private ArrayList<Bonuses> highestOverall;
+    private ArrayList<Bonuses> highestEconomy;
+    private ArrayList<Bonuses> highestMilitary;
+    private ArrayList<Bonuses> highestResearch;
 
-    public ArrayList<BonusCounts> getHighestOverall() {
+    public ArrayList<Bonuses> getHighestOverall() {
         return highestOverall;
     }
 
-    public void setHighestOverall(ArrayList<BonusCounts> highestOverall) {
+    public void setHighestOverall(ArrayList<Bonuses> highestOverall) {
         this.highestOverall = highestOverall;
     }
 
-    public ArrayList<BonusCounts> getHighestEconomy() {
+    public ArrayList<Bonuses> getHighestEconomy() {
         return highestEconomy;
     }
 
-    public void setHighestEconomy(ArrayList<BonusCounts> highestEconomy) {
+    public void setHighestEconomy(ArrayList<Bonuses> highestEconomy) {
         this.highestEconomy = highestEconomy;
     }
 
-    public ArrayList<BonusCounts> getHighestMilitary() {
+    public ArrayList<Bonuses> getHighestMilitary() {
         return highestMilitary;
     }
 
-    public void setHighestMilitary(ArrayList<BonusCounts> highestMilitary) {
+    public void setHighestMilitary(ArrayList<Bonuses> highestMilitary) {
         this.highestMilitary = highestMilitary;
     }
 
-    public ArrayList<BonusCounts> getHighestResearch() {
+    public ArrayList<Bonuses> getHighestResearch() {
         return highestResearch;
     }
 
-    public void setHighestResearch(ArrayList<BonusCounts> highestResearch) {
+    public void setHighestResearch(ArrayList<Bonuses> highestResearch) {
         this.highestResearch = highestResearch;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Highest total synergy (" + totalSynergy(highestOverall.get(0)) + ") for:" + System.lineSeparator());
+        sb.append("Highest overall bonuses (" + totalBonuses(highestOverall.get(0)) + ") for:" + System.lineSeparator());
         buildTableFor(sb, highestOverall);
 
-        sb.append("Highest overall economy (" + highestEconomy.get(0).economy + ") for:" + System.lineSeparator());
+        sb.append("Highest economy bonuses (" + highestEconomy.get(0).economy + ") for:" + System.lineSeparator());
         buildTableFor(sb, highestEconomy);
 
-        sb.append("Highest overall military (" + highestMilitary.get(0).military + ") for:" + System.lineSeparator());
+        sb.append("Highest military bonuses (" + highestMilitary.get(0).military + ") for:" + System.lineSeparator());
         buildTableFor(sb, highestMilitary);
 
-        sb.append("Highest overall research (" + highestResearch.get(0).research + ") for:" + System.lineSeparator());
+        sb.append("Highest research bonuses (" + highestResearch.get(0).research + ") for:" + System.lineSeparator());
         buildTableFor(sb, highestResearch);
 
         return sb.toString();
     }
 
-    private void buildTableFor(StringBuilder sb, ArrayList<BonusCounts> bonusCounts)
+    private void buildTableFor(StringBuilder sb, ArrayList<Bonuses> bonusCounts)
     {
         Table.Builder tableBuilder = new Table.Builder();
         tableBuilder.addRow(tableHeader());
-        for(BonusCounts bonusCount : bonusCounts)
+        for(Bonuses bonusCount : bonusCounts)
         {
             tableBuilder.addRow(bonusCount.asRow());
         }

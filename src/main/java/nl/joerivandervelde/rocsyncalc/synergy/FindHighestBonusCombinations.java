@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class FindOptimalSynergy {
+public class FindHighestBonusCombinations {
 
-    private Synergy synergyCounts;
+    private HighestBonuses synergyCounts;
 
-    public Synergy iterateOver(List<Wonder[]> allCapCityWonderSubsets, List<Wonder[]> allAlliedCultSubsets)
+    public HighestBonuses iterateOverWonderSetCombinations(List<Wonder[]> allCapCityWonderSubsets, List<Wonder[]> allAlliedCultSubsets)
     {
         for(Wonder[] ancientWorldWonderSubset : allCapCityWonderSubsets)
         {
@@ -18,17 +18,17 @@ public class FindOptimalSynergy {
             {
                 Wonder[] result = Arrays.copyOf(ancientWorldWonderSubset, ancientWorldWonderSubset.length + greatEmpiresWonderSubset.length);
                 System.arraycopy(greatEmpiresWonderSubset, 0, result, ancientWorldWonderSubset.length, greatEmpiresWonderSubset.length);
-                BonusCounts bonusCounts = calculateSynergies(result);
-                assignHighest(bonusCounts);
+                Bonuses bonusCounts = countAllBonusesForAllCombinations(result);
+                keepTrackOfHighestBonuses(bonusCounts);
             }
         }
         return synergyCounts;
     }
 
-    public void assignHighest(BonusCounts bonusCounts){
+    public void keepTrackOfHighestBonuses(Bonuses bonusCounts){
         if(synergyCounts == null)
         {
-            this.synergyCounts = new Synergy();
+            this.synergyCounts = new HighestBonuses();
             synergyCounts.setHighestOverall(new ArrayList<>(List.of(bonusCounts)));
             synergyCounts.setHighestEconomy(new ArrayList<>(List.of(bonusCounts)));
             synergyCounts.setHighestMilitary(new ArrayList<>(List.of(bonusCounts)));
@@ -36,8 +36,8 @@ public class FindOptimalSynergy {
             return;
         }
 
-        int totalSyn = totalSynergy(bonusCounts);
-        int highestTotalSynergySoFar = totalSynergy(synergyCounts.getHighestOverall().get(0));
+        int totalSyn = totalBonuses(bonusCounts);
+        int highestTotalSynergySoFar = totalBonuses(synergyCounts.getHighestOverall().get(0));
 
         if(totalSyn > highestTotalSynergySoFar)
         {
@@ -75,46 +75,46 @@ public class FindOptimalSynergy {
         }
     }
 
-    public BonusCounts calculateSynergies(Wonder[] wonders)
+    public Bonuses countAllBonusesForAllCombinations(Wonder[] wonders)
     {
-        BonusCounts bonusCounts = new BonusCounts();
+        Bonuses bonusCounts = new Bonuses();
         bonusCounts.forWonders = wonders;
         for(Wonder wonder : wonders)
         {
-            addBonusCountsForWonder(bonusCounts, wonder);
+            addSelfBonusesForWonder(bonusCounts, wonder);
             for(Wonder compareAgainst : wonders)
             {
                 if(wonder.equals(compareAgainst))
                 {
                     continue;
                 }
-                addBoostedBonusCountsForWonder(bonusCounts, wonder, compareAgainst);
+                addSynergyBonusesForWonder(bonusCounts, wonder, compareAgainst);
             }
         }
         return bonusCounts;
     }
 
-    public static int totalSynergy(BonusCounts bonusCounts)
+    public static int totalBonuses(Bonuses bonusCounts)
     {
         return bonusCounts.economy + bonusCounts.military + bonusCounts.research;
     }
 
-    public void addBonusCountsForWonder(BonusCounts bonusCounts, Wonder wonder) {
-        switch (wonder.getBonusOne()) {
+    public void addSelfBonusesForWonder(Bonuses bonusCounts, Wonder wonder) {
+        switch (wonder.getSelfBonusOne()) {
             case ECONOMY -> bonusCounts.economy++;
             case MILITARY -> bonusCounts.military++;
             case RESEARCH -> bonusCounts.research++;
         }
-        switch (wonder.getBonusTwo()) {
+        switch (wonder.getSelfBonusTwo()) {
             case ECONOMY -> bonusCounts.economy++;
             case MILITARY -> bonusCounts.military++;
             case RESEARCH -> bonusCounts.research++;
         }
     }
 
-    public void addBoostedBonusCountsForWonder(BonusCounts bonusCounts, Wonder wonder, Wonder compareAgainst) {
-        if(compareAgainst.getWonderType().contains(wonder.getBoostedByType())){
-            switch (wonder.getBoosted()) {
+    public void addSynergyBonusesForWonder(Bonuses bonusCounts, Wonder wonder, Wonder compareAgainst) {
+        if(compareAgainst.getWonderType().contains(wonder.getSynergizedByType())){
+            switch (wonder.getSynergyBonus()) {
                 case ECONOMY -> bonusCounts.economy++;
                 case MILITARY -> bonusCounts.military++;
                 case RESEARCH -> bonusCounts.research++;

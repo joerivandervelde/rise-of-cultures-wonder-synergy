@@ -13,20 +13,20 @@ public class Wonder {
     private final WonderLocation wonderLocation;
     private final WonderAge wonderAge;
     private final Set<WonderType> wonderType;
-    private final WonderType boostedByType;
-    private Bonus bonusOne;
-    private Bonus bonusTwo;
-    private Bonus boosted;
+    private final WonderType synergizedByType;
+    private Bonus selfBonusOne;
+    private Bonus selfBonusTwo;
+    private Bonus synergyBonus;
 
-    public Wonder(String name, WonderLocation wonderLocation, WonderAge wonderAge, Set<WonderType> wonderType, WonderType boostedByType, Bonus bonusOne, Bonus bonusTwo, Bonus boosted) {
+    public Wonder(String name, WonderLocation wonderLocation, WonderAge wonderAge, Set<WonderType> wonderType, WonderType synergizedByType, Bonus selfBonusOne, Bonus selfBonusTwo, Bonus synergyBonus) {
         this.name = name;
         this.wonderLocation = wonderLocation;
         this.wonderAge = wonderAge;
         this.wonderType = wonderType;
-        this.boostedByType = boostedByType;
-        this.bonusOne = bonusOne;
-        this.bonusTwo = bonusTwo;
-        this.boosted = boosted;
+        this.synergizedByType = synergizedByType;
+        this.selfBonusOne = selfBonusOne;
+        this.selfBonusTwo = selfBonusTwo;
+        this.synergyBonus = synergyBonus;
     }
 
     public String getName() {
@@ -41,28 +41,28 @@ public class Wonder {
         return wonderType;
     }
 
-    public WonderType getBoostedByType() {
-        return boostedByType;
+    public WonderType getSynergizedByType() {
+        return synergizedByType;
     }
 
-    public Bonus getBonusOne() {
-        return bonusOne;
+    public Bonus getSelfBonusOne() {
+        return selfBonusOne;
     }
 
-    public Bonus getBonusTwo() {
-        return bonusTwo;
+    public Bonus getSelfBonusTwo() {
+        return selfBonusTwo;
     }
 
-    public Bonus getBoosted() {
-        return boosted;
+    public Bonus getSynergyBonus() {
+        return synergyBonus;
     }
 
-    public void setBonusOne(Bonus bonusOne) {
-        this.bonusOne = bonusOne;
+    public void setSelfBonusOne(Bonus selfBonusOne) {
+        this.selfBonusOne = selfBonusOne;
     }
 
-    public void setBoosted(Bonus boosted) {
-        this.boosted = boosted;
+    public void setSynergyBonus(Bonus synergyBonus) {
+        this.synergyBonus = synergyBonus;
     }
 
     @Override
