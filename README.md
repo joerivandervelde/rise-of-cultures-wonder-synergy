@@ -1,22 +1,25 @@
-# Rise of Cultures wonder synergy
-Calculates the highest wonder bonus synergies for Rise of Cultures.
+# Optimal wonder synergy in Rise of Cultures
+Calculates the highest synergy for wonder combinations in Rise of Cultures.
 Players can choose 8 wonders of the world in groups of 4 'capital city' wonders and 4 'allied cultures' wonders.
 Wonders have self bonuses that are always active and synergy bonuses that are only active when other wonders of a specific type are chosen.
 Choosing wonders that boost each other will significantly improve your economy, military and research.
 Of course, the actual best combination of wonders for _you_ depends on your culture's needs, the wonders you have unlocked, and their upgrade levels.
 
+## Highest bonuses... for what?
 For now, let us assume that all wonders can be chosen, and are of equal level.
 Which combination of wonders offers the highest number of bonuses?
-The answer should be calculated for different scenarios:
+The answer should be calculated for different scenarios to suit your needs:
 * Overall - a combined total of bonuses across economy, military and research
 * Economy - bonuses for workers and production, disregarding military and research
 * Military - bonuses for fighting battles, disregarding economy and research
 * Research - bonuses generating research, disregarding economy and military
 
-Notes:
+## Notes
 * Mystery Chests with food and gold which can include a Mercenary Commander counts as Economy
 * Mystery Chests with food, gold or goods which can include Research Points counts as Research
 * Increase of production speed of soldiers counts as Economy (since it frees up workers)
+
+## Bad bonuses
 * The military bonuses of Sherwood Forest and Sayil Palace are questionable. Ranged units should not get hit and bastion units (e.g. Alexander's Bastion, King Pakal's Deadly Walls) only play a limited role. Therefore, another set of results is calculated, after removing the following 'bad bonuses':
   * Sherwood Forest
     * Boosts the Hit Points of all of your Ranged Units
