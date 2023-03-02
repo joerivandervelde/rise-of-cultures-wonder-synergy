@@ -37,6 +37,8 @@ public class WonderInstances {
         this.allWonders.add(new Wonder("Great Wall", ALLIED_CULTURES, GREAT_EMPIRES, new HashSet<>(Arrays.asList(FORTRESS)), FORTRESS, MILITARY, RESEARCH, RESEARCH));
         this.allWonders.add(new Wonder("Sayil Palace", ALLIED_CULTURES, GREAT_EMPIRES, new HashSet<>(Arrays.asList(FORTRESS, PALACE)), FORTRESS, MILITARY, ECONOMY, MILITARY));
         this.allWonders.add(new Wonder("Chichen Itza", ALLIED_CULTURES, GREAT_EMPIRES, new HashSet<>(Arrays.asList(TEMPLE, ARENA)), ARENA, MILITARY, ECONOMY, MILITARY));
+        this.allWonders.add(new Wonder("Tikal", ALLIED_CULTURES, GREAT_EMPIRES, new HashSet<>(Arrays.asList(ARENA)), ARENA, ECONOMY, ECONOMY, ECONOMY));
+        this.allWonders.add(new Wonder("Colossus of Rhodes", CAPITAL_CITY, ANCIENT_WORLD, new HashSet<>(Arrays.asList(NAVAL, STATUE)), NAVAL, RESEARCH, NONE, RESEARCH));
         this.allWondersByName = new HashMap<>();
         for(Wonder w : allWonders)
         {

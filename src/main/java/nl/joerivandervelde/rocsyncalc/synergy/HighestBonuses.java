@@ -50,16 +50,16 @@ public class HighestBonuses {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Highest overall bonuses (" + totalBonuses(highestOverall.get(0)) + ") for:" + System.lineSeparator());
+        sb.append("### Highest overall combined bonuses (" + totalBonuses(highestOverall.get(0)) + ") for:" + System.lineSeparator() + System.lineSeparator());
         buildTableFor(sb, highestOverall);
 
-        sb.append("Highest economy bonuses (" + highestEconomy.get(0).economy + ") for:" + System.lineSeparator());
+        sb.append("### Highest economy bonus (" + highestEconomy.get(0).economy + ") for:" + System.lineSeparator() + System.lineSeparator());
         buildTableFor(sb, highestEconomy);
 
-        sb.append("Highest military bonuses (" + highestMilitary.get(0).military + ") for:" + System.lineSeparator());
+        sb.append("### Highest military bonus (" + highestMilitary.get(0).military + ") for:" + System.lineSeparator() + System.lineSeparator());
         buildTableFor(sb, highestMilitary);
 
-        sb.append("Highest research bonuses (" + highestResearch.get(0).research + ") for:" + System.lineSeparator());
+        sb.append("### Highest research bonus (" + highestResearch.get(0).research + ") for:" + System.lineSeparator() + System.lineSeparator());
         buildTableFor(sb, highestResearch);
 
         return sb.toString();
