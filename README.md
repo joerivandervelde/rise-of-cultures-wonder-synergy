@@ -31,11 +31,11 @@ The answer should be calculated for different scenarios to suit your needs:
     * Boosts the Damage of all of your Bastion Units by 2.0% extra per every other active Fortress
 
 ## Results (including 'bad bonuses')
-### Highest overall combined bonuses (48) for:
+### Highest overall combined bonuses (50) for:
 
-| Economy | Military | Research | Wonder 1        | Wonder 2  | Wonder 3         | Wonder 4        | Wonder 5   | Wonder 6        | Wonder 7   | Wonder 8     |
-|---------|----------|----------|-----------------|-----------|------------------|-----------------|------------|-----------------|------------|--------------|
-| 9       | 28       | 11       | Hanging Gardens | Colosseum | Palace of Aachen | Sherwood Forest | Abu Simbel | Terracotta Army | Great Wall | Sayil Palace |
+| Economy | Military | Research | Wonder 1  | Wonder 2         | Wonder 3        | Wonder 4            | Wonder 5   | Wonder 6        | Wonder 7   | Wonder 8     |
+|---------|----------|----------|-----------|------------------|-----------------|---------------------|------------|-----------------|------------|--------------|
+| 4       | 34       | 12       | Colosseum | Palace of Aachen | Sherwood Forest | Cité de Carcassonne | Abu Simbel | Terracotta Army | Great Wall | Sayil Palace |
 
 ### Highest economy bonus (31) for:
 
@@ -45,20 +45,21 @@ The answer should be calculated for different scenarios to suit your needs:
 | 31      | 3        | 2        | Temple of Artemis | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal    |
 | 31      | 2        | 9        | Stonehenge        | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal    |
 
-### Highest military bonus (35) for:
+### Highest military bonus (36) for:
 
-| Economy | Military | Research | Wonder 1       | Wonder 2  | Wonder 3         | Wonder 4        | Wonder 5     | Wonder 6        | Wonder 7   | Wonder 8     |
-|---------|----------|----------|----------------|-----------|------------------|-----------------|--------------|-----------------|------------|--------------|
-| 5       | 35       | 7        | Statue of Zeus | Colosseum | Palace of Aachen | Sherwood Forest | Great Sphinx | Terracotta Army | Great Wall | Sayil Palace |
+| Economy | Military | Research | Wonder 1  | Wonder 2         | Wonder 3        | Wonder 4            | Wonder 5     | Wonder 6        | Wonder 7   | Wonder 8     |
+|---------|----------|----------|-----------|------------------|-----------------|---------------------|--------------|-----------------|------------|--------------|
+| 5       | 36       | 8        | Colosseum | Palace of Aachen | Sherwood Forest | Cité de Carcassonne | Great Sphinx | Terracotta Army | Great Wall | Sayil Palace |
 
-### Highest research bonus (13) for:
+### Highest research bonus (15) for:
 
-| Economy | Military | Research | Wonder 1   | Wonder 2         | Wonder 3         | Wonder 4         | Wonder 5   | Wonder 6       | Wonder 7   | Wonder 8     |
-|---------|----------|----------|------------|------------------|------------------|------------------|------------|----------------|------------|--------------|
-| 13      | 8        | 13       | Stonehenge | Tomb of Mausolus | Hagia Sophia     | Palace of Aachen | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
-| 12      | 8        | 13       | Stonehenge | Tomb of Mausolus | Hagia Sophia     | Sherwood Forest  | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
-| 10      | 14       | 13       | Stonehenge | Tomb of Mausolus | Palace of Aachen | Sherwood Forest  | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
-| 8       | 14       | 13       | Stonehenge | Hagia Sophia     | Palace of Aachen | Sherwood Forest  | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| Economy | Military | Research | Wonder 1   | Wonder 2         | Wonder 3            | Wonder 4              | Wonder 5   | Wonder 6       | Wonder 7   | Wonder 8     |
+|---------|----------|----------|------------|------------------|---------------------|-----------------------|------------|----------------|------------|--------------|
+| 11      | 8        | 15       | Stonehenge | Hanging Gardens  | Sherwood Forest     | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| 11      | 8        | 15       | Stonehenge | Tomb of Mausolus | Sherwood Forest     | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| 8       | 8        | 15       | Stonehenge | Hagia Sophia     | Sherwood Forest     | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| 7       | 14       | 15       | Stonehenge | Palace of Aachen | Sherwood Forest     | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| 6       | 12       | 15       | Stonehenge | Sherwood Forest  | Cité de Carcassonne | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
 
 ## Results (after removing 'bad bonuses')
 ### Highest overall combined bonuses (43) for:
@@ -69,6 +70,8 @@ The answer should be calculated for different scenarios to suit your needs:
 | 31      | 4        | 8        | Temple of Artemis | Stonehenge | Tomb of Mausolus | Lighthouse of Alexandria | Cheops Pyramid | Forbidden City | Chichen Itza   | Tikal        |
 | 28      | 6        | 9        | Temple of Artemis | Stonehenge | Tomb of Mausolus | Hagia Sophia             | Cheops Pyramid | Great Sphinx   | Forbidden City | Chichen Itza |
 | 30      | 4        | 9        | Temple of Artemis | Stonehenge | Tomb of Mausolus | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza   | Tikal        |
+| 27      | 6        | 10       | Temple of Artemis | Stonehenge | Tomb of Mausolus | Leaning Tower of Pisa    | Cheops Pyramid | Great Sphinx   | Forbidden City | Chichen Itza |
+| 29      | 4        | 10       | Temple of Artemis | Stonehenge | Tomb of Mausolus | Leaning Tower of Pisa    | Cheops Pyramid | Forbidden City | Chichen Itza   | Tikal        |
 
 ### Highest economy bonus (31) for:
 
@@ -80,17 +83,19 @@ The answer should be calculated for different scenarios to suit your needs:
 
 ### Highest military bonus (25) for:
 
-| Economy | Military | Research | Wonder 1          | Wonder 2       | Wonder 3  | Wonder 4         | Wonder 5     | Wonder 6        | Wonder 7   | Wonder 8     |
-|---------|----------|----------|-------------------|----------------|-----------|------------------|--------------|-----------------|------------|--------------|
-| 6       | 25       | 5        | Temple of Artemis | Statue of Zeus | Colosseum | Palace of Aachen | Great Sphinx | Terracotta Army | Great Wall | Sayil Palace |
-| 6       | 25       | 4        | Temple of Artemis | Statue of Zeus | Colosseum | Palace of Aachen | Great Sphinx | Terracotta Army | Great Wall | Chichen Itza |
+| Economy | Military | Research | Wonder 1          | Wonder 2       | Wonder 3         | Wonder 4            | Wonder 5     | Wonder 6        | Wonder 7   | Wonder 8     |
+|---------|----------|----------|-------------------|----------------|------------------|---------------------|--------------|-----------------|------------|--------------|
+| 6       | 25       | 5        | Temple of Artemis | Statue of Zeus | Colosseum        | Palace of Aachen    | Great Sphinx | Terracotta Army | Great Wall | Sayil Palace |
+| 6       | 25       | 4        | Temple of Artemis | Statue of Zeus | Colosseum        | Palace of Aachen    | Great Sphinx | Terracotta Army | Great Wall | Chichen Itza |
+| 5       | 25       | 6        | Statue of Zeus    | Colosseum      | Palace of Aachen | Cité de Carcassonne | Great Sphinx | Terracotta Army | Great Wall | Sayil Palace |
+| 5       | 25       | 5        | Statue of Zeus    | Colosseum      | Palace of Aachen | Cité de Carcassonne | Great Sphinx | Terracotta Army | Great Wall | Chichen Itza |
 
-### Highest research bonus (13) for:
+### Highest research bonus (15) for:
 
-| Economy | Military | Research | Wonder 1   | Wonder 2         | Wonder 3         | Wonder 4         | Wonder 5   | Wonder 6       | Wonder 7   | Wonder 8     |
-|---------|----------|----------|------------|------------------|------------------|------------------|------------|----------------|------------|--------------|
-| 13      | 5        | 13       | Stonehenge | Tomb of Mausolus | Hagia Sophia     | Palace of Aachen | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
-| 12      | 2        | 13       | Stonehenge | Tomb of Mausolus | Hagia Sophia     | Sherwood Forest  | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
-| 10      | 6        | 13       | Stonehenge | Tomb of Mausolus | Palace of Aachen | Sherwood Forest  | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
-| 8       | 6        | 13       | Stonehenge | Hagia Sophia     | Palace of Aachen | Sherwood Forest  | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
-
+| Economy | Military | Research | Wonder 1   | Wonder 2         | Wonder 3            | Wonder 4              | Wonder 5   | Wonder 6       | Wonder 7   | Wonder 8     |
+|---------|----------|----------|------------|------------------|---------------------|-----------------------|------------|----------------|------------|--------------|
+| 11      | 2        | 15       | Stonehenge | Hanging Gardens  | Sherwood Forest     | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| 11      | 2        | 15       | Stonehenge | Tomb of Mausolus | Sherwood Forest     | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| 8       | 2        | 15       | Stonehenge | Hagia Sophia     | Sherwood Forest     | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| 7       | 6        | 15       | Stonehenge | Palace of Aachen | Sherwood Forest     | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |
+| 6       | 4        | 15       | Stonehenge | Sherwood Forest  | Cité de Carcassonne | Leaning Tower of Pisa | Abu Simbel | Forbidden City | Great Wall | Sayil Palace |

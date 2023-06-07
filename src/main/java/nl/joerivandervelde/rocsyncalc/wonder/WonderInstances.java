@@ -5,8 +5,7 @@ import nl.joerivandervelde.rocsyncalc.wonder.properties.WonderLocation;
 import java.util.*;
 
 import static nl.joerivandervelde.rocsyncalc.wonder.properties.Bonus.*;
-import static nl.joerivandervelde.rocsyncalc.wonder.properties.WonderAge.ANCIENT_WORLD;
-import static nl.joerivandervelde.rocsyncalc.wonder.properties.WonderAge.GREAT_EMPIRES;
+import static nl.joerivandervelde.rocsyncalc.wonder.properties.WonderAge.*;
 import static nl.joerivandervelde.rocsyncalc.wonder.properties.WonderLocation.ALLIED_CULTURES;
 import static nl.joerivandervelde.rocsyncalc.wonder.properties.WonderLocation.CAPITAL_CITY;
 import static nl.joerivandervelde.rocsyncalc.wonder.properties.WonderType.*;
@@ -28,6 +27,7 @@ public class WonderInstances {
         this.allWonders.add(new Wonder("Abu Simbel", ALLIED_CULTURES, ANCIENT_WORLD, new HashSet<>(Arrays.asList(PALACE)), PALACE, MILITARY, RESEARCH, RESEARCH));
         this.allWonders.add(new Wonder("Tomb of Mausolus", CAPITAL_CITY, ANCIENT_WORLD, new HashSet<>(Arrays.asList(TEMPLE)), TEMPLE, RESEARCH, ECONOMY, ECONOMY));
         this.allWonders.add(new Wonder("Lighthouse of Alexandria", CAPITAL_CITY, ANCIENT_WORLD, new HashSet<>(Arrays.asList(NAVAL, TEMPLE)), NAVAL, ECONOMY, ECONOMY, ECONOMY));
+        this.allWonders.add(new Wonder("Colossus of Rhodes", CAPITAL_CITY, ANCIENT_WORLD, new HashSet<>(Arrays.asList(NAVAL, STATUE)), NAVAL, RESEARCH, NONE, RESEARCH));
         this.allWonders.add(new Wonder("Hagia Sophia", CAPITAL_CITY, GREAT_EMPIRES, new HashSet<>(Arrays.asList(TEMPLE)), UNSYNERGIZED, RESEARCH, ECONOMY, NONE));
         this.allWonders.add(new Wonder("Colosseum", CAPITAL_CITY, GREAT_EMPIRES, new HashSet<>(Arrays.asList(ARENA, FORTRESS)), STATUE, MILITARY, ECONOMY, MILITARY));
         this.allWonders.add(new Wonder("Palace of Aachen", CAPITAL_CITY, GREAT_EMPIRES, new HashSet<>(Arrays.asList(FORTRESS, PALACE)), FORTRESS, MILITARY, ECONOMY, MILITARY));
@@ -38,7 +38,8 @@ public class WonderInstances {
         this.allWonders.add(new Wonder("Sayil Palace", ALLIED_CULTURES, GREAT_EMPIRES, new HashSet<>(Arrays.asList(FORTRESS, PALACE)), FORTRESS, MILITARY, ECONOMY, MILITARY));
         this.allWonders.add(new Wonder("Chichen Itza", ALLIED_CULTURES, GREAT_EMPIRES, new HashSet<>(Arrays.asList(TEMPLE, ARENA)), ARENA, MILITARY, ECONOMY, MILITARY));
         this.allWonders.add(new Wonder("Tikal", ALLIED_CULTURES, GREAT_EMPIRES, new HashSet<>(Arrays.asList(ARENA)), ARENA, ECONOMY, ECONOMY, ECONOMY));
-        this.allWonders.add(new Wonder("Colossus of Rhodes", CAPITAL_CITY, ANCIENT_WORLD, new HashSet<>(Arrays.asList(NAVAL, STATUE)), NAVAL, RESEARCH, NONE, RESEARCH));
+        this.allWonders.add(new Wonder("Cité de Carcassonne", CAPITAL_CITY, STORIES_AND_MYTHS, new HashSet<>(Arrays.asList(FORTRESS, PALACE)), UNSYNERGIZED, MILITARY, MILITARY, NONE));
+        this.allWonders.add(new Wonder("Leaning Tower of Pisa", CAPITAL_CITY, STORIES_AND_MYTHS, new HashSet<>(Arrays.asList(NATURE, TEMPLE)), NATURE, RESEARCH, RESEARCH, RESEARCH));
         this.allWondersByName = new HashMap<>();
         for(Wonder w : allWonders)
         {
