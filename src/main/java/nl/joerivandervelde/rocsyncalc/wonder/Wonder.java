@@ -5,6 +5,7 @@ import nl.joerivandervelde.rocsyncalc.wonder.properties.WonderAge;
 import nl.joerivandervelde.rocsyncalc.wonder.properties.WonderLocation;
 import nl.joerivandervelde.rocsyncalc.wonder.properties.WonderType;
 
+import java.util.List;
 import java.util.Set;
 
 public class Wonder {
@@ -12,13 +13,13 @@ public class Wonder {
     private final String name;
     private final WonderLocation wonderLocation;
     private final WonderAge wonderAge;
-    private final Set<WonderType> wonderType;
+    private final List<WonderType> wonderType;
     private final WonderType synergizedByType;
     private Bonus selfBonusOne;
     private Bonus selfBonusTwo;
     private Bonus synergyBonus;
 
-    public Wonder(String name, WonderLocation wonderLocation, WonderAge wonderAge, Set<WonderType> wonderType, WonderType synergizedByType, Bonus selfBonusOne, Bonus selfBonusTwo, Bonus synergyBonus) {
+    public Wonder(String name, WonderLocation wonderLocation, WonderAge wonderAge, List<WonderType> wonderType, WonderType synergizedByType, Bonus selfBonusOne, Bonus selfBonusTwo, Bonus synergyBonus) {
         this.name = name;
         this.wonderLocation = wonderLocation;
         this.wonderAge = wonderAge;
@@ -37,7 +38,7 @@ public class Wonder {
         return wonderLocation;
     }
 
-    public Set<WonderType> getWonderType() {
+    public List<WonderType> getWonderType() {
         return wonderType;
     }
 

@@ -1,6 +1,7 @@
 package nl.joerivandervelde.rocsyncalc.synergy;
 
 import nl.joerivandervelde.rocsyncalc.wonder.Wonder;
+import nl.joerivandervelde.rocsyncalc.wonder.properties.WonderType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -113,11 +114,14 @@ public class FindHighestBonusCombinations {
     }
 
     public void addSynergyBonusesForWonder(Bonuses bonusCounts, Wonder wonder, Wonder compareAgainst) {
-        if(compareAgainst.getWonderType().contains(wonder.getSynergizedByType())){
-            switch (wonder.getSynergyBonus()) {
-                case ECONOMY -> bonusCounts.economy++;
-                case MILITARY -> bonusCounts.military++;
-                case RESEARCH -> bonusCounts.research++;
+        for(WonderType wonderType : compareAgainst.getWonderType())
+        {
+            if(wonderType == wonder.getSynergizedByType()){
+                switch (wonder.getSynergyBonus()) {
+                    case ECONOMY -> bonusCounts.economy++;
+                    case MILITARY -> bonusCounts.military++;
+                    case RESEARCH -> bonusCounts.research++;
+                }
             }
         }
     }
