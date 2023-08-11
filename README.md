@@ -34,24 +34,27 @@ The answer should be calculated for different scenarios to suit your needs:
 ## Results (including 'bad bonuses')
 ### Highest overall combined bonuses (50) for:
 
-| Economy | Military | Research | Wonder 1  | Wonder 2         | Wonder 3        | Wonder 4            | Wonder 5   | Wonder 6        | Wonder 7   | Wonder 8     |
-|---------|----------|----------|-----------|------------------|-----------------|---------------------|------------|-----------------|------------|--------------|
-| 4       | 34       | 12       | Colosseum | Palace of Aachen | Sherwood Forest | Cité de Carcassonne | Abu Simbel | Terracotta Army | Great Wall | Sayil Palace |
+| Economy | Military | Research | Wonder 1  | Wonder 2         | Wonder 3        | Wonder 4            | Wonder 5        | Wonder 6        | Wonder 7     | Wonder 8     |
+|---------|----------|----------|-----------|------------------|-----------------|---------------------|-----------------|-----------------|--------------|--------------|
+| 4       | 34       | 12       | Colosseum | Palace of Aachen | Sherwood Forest | Cité de Carcassonne | Abu Simbel      | Terracotta Army | Great Wall   | Sayil Palace |
+| 4       | 38       | 8        | Colosseum | Palace of Aachen | Sherwood Forest | Cité de Carcassonne | Terracotta Army | Great Wall      | Sayil Palace | Walhalla     |
 
 ### Highest economy bonus (31) for:
 
-| Economy | Military | Research | Wonder 1          | Wonder 2         | Wonder 3                 | Wonder 4                 | Wonder 5       | Wonder 6       | Wonder 7     | Wonder 8 |
-|---------|----------|----------|-------------------|------------------|--------------------------|--------------------------|----------------|----------------|--------------|----------|
-| 31      | 4        | 8        | Temple of Artemis | Stonehenge       | Tomb of Mausolus         | Lighthouse of Alexandria | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal    |
-| 31      | 3        | 2        | Temple of Artemis | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal    |
-| 31      | 2        | 9        | Stonehenge        | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal    |
+| Economy | Military | Research | Wonder 1          | Wonder 2         | Wonder 3                 | Wonder 4                 | Wonder 5       | Wonder 6       | Wonder 7     | Wonder 8           |
+|---------|----------|----------|-------------------|------------------|--------------------------|--------------------------|----------------|----------------|--------------|--------------------|
+| 31      | 4        | 8        | Temple of Artemis | Stonehenge       | Tomb of Mausolus         | Lighthouse of Alexandria | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal              |
+| 31      | 4        | 8        | Temple of Artemis | Stonehenge       | Tomb of Mausolus         | Lighthouse of Alexandria | Cheops Pyramid | Forbidden City | Chichen Itza | Dragonship Ellidia |
+| 31      | 3        | 2        | Temple of Artemis | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal              |
+| 31      | 3        | 2        | Temple of Artemis | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Dragonship Ellidia |
+| 31      | 2        | 9        | Stonehenge        | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal              |
+| 31      | 2        | 9        | Stonehenge        | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Dragonship Ellidia |
 
-### Highest military bonus (36) for:
+### Highest military bonus (38) for:
 
-| Economy | Military | Research | Wonder 1       | Wonder 2         | Wonder 3         | Wonder 4            | Wonder 5     | Wonder 6        | Wonder 7     | Wonder 8     |
-|---------|----------|----------|----------------|------------------|------------------|---------------------|--------------|-----------------|--------------|--------------|
-| 7       | 36       | 1        | Statue of Zeus | Colosseum        | Palace of Aachen | Sherwood Forest     | Great Sphinx | Terracotta Army | Sayil Palace | Yggdrasil    |
-| 5       | 36       | 8        | Colosseum      | Palace of Aachen | Sherwood Forest  | Cité de Carcassonne | Great Sphinx | Terracotta Army | Great Wall   | Sayil Palace |
+| Economy | Military | Research | Wonder 1  | Wonder 2         | Wonder 3        | Wonder 4            | Wonder 5        | Wonder 6   | Wonder 7     | Wonder 8 |
+|---------|----------|----------|-----------|------------------|-----------------|---------------------|-----------------|------------|--------------|----------|
+| 4       | 38       | 8        | Colosseum | Palace of Aachen | Sherwood Forest | Cité de Carcassonne | Terracotta Army | Great Wall | Sayil Palace | Walhalla |
 
 ### Highest research bonus (15) for:
 
@@ -92,17 +95,21 @@ The answer should be calculated for different scenarios to suit your needs:
 
 ### Highest economy bonus (31) for:
 
-| Economy | Military | Research | Wonder 1          | Wonder 2         | Wonder 3                 | Wonder 4                 | Wonder 5       | Wonder 6       | Wonder 7     | Wonder 8 |
-|---------|----------|----------|-------------------|------------------|--------------------------|--------------------------|----------------|----------------|--------------|----------|
-| 31      | 4        | 8        | Temple of Artemis | Stonehenge       | Tomb of Mausolus         | Lighthouse of Alexandria | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal    |
-| 31      | 3        | 2        | Temple of Artemis | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal    |
-| 31      | 2        | 9        | Stonehenge        | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal    |
+| Economy | Military | Research | Wonder 1          | Wonder 2         | Wonder 3                 | Wonder 4                 | Wonder 5       | Wonder 6       | Wonder 7     | Wonder 8           |
+|---------|----------|----------|-------------------|------------------|--------------------------|--------------------------|----------------|----------------|--------------|--------------------|
+| 31      | 4        | 8        | Temple of Artemis | Stonehenge       | Tomb of Mausolus         | Lighthouse of Alexandria | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal              |
+| 31      | 4        | 8        | Temple of Artemis | Stonehenge       | Tomb of Mausolus         | Lighthouse of Alexandria | Cheops Pyramid | Forbidden City | Chichen Itza | Dragonship Ellidia |
+| 31      | 3        | 2        | Temple of Artemis | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal              |
+| 31      | 3        | 2        | Temple of Artemis | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Dragonship Ellidia |
+| 31      | 2        | 9        | Stonehenge        | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Tikal              |
+| 31      | 2        | 9        | Stonehenge        | Tomb of Mausolus | Lighthouse of Alexandria | Hagia Sophia             | Cheops Pyramid | Forbidden City | Chichen Itza | Dragonship Ellidia |
 
 ### Highest military bonus (31) for:
 
 | Economy | Military | Research | Wonder 1          | Wonder 2       | Wonder 3  | Wonder 4         | Wonder 5     | Wonder 6        | Wonder 7   | Wonder 8  |
 |---------|----------|----------|-------------------|----------------|-----------|------------------|--------------|-----------------|------------|-----------|
 | 7       | 31       | 4        | Temple of Artemis | Statue of Zeus | Colosseum | Palace of Aachen | Great Sphinx | Terracotta Army | Great Wall | Yggdrasil |
+| 7       | 31       | 0        | Temple of Artemis | Statue of Zeus | Colosseum | Palace of Aachen | Great Sphinx | Terracotta Army | Yggdrasil  | Walhalla  |
 
 ### Highest research bonus (15) for:
 

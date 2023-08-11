@@ -42,6 +42,8 @@ public class WonderInstances {
         this.allWonders.add(new Wonder("Leaning Tower of Pisa", CAPITAL_CITY, STORIES_AND_MYTHS, new ArrayList<>(Arrays.asList(NATURE, TEMPLE)), NATURE, RESEARCH, RESEARCH, RESEARCH));
         this.allWonders.add(new Wonder("Alhambra", CAPITAL_CITY, STORIES_AND_MYTHS, new ArrayList<>(Arrays.asList(FORTRESS, NATURE)), UNSYNERGIZED, MILITARY, ECONOMY, NONE));
         this.allWonders.add(new Wonder("Yggdrasil", ALLIED_CULTURES, STORIES_AND_MYTHS, new ArrayList<>(Arrays.asList(NATURE, NATURE, STATUE, STATUE)), UNSYNERGIZED, ECONOMY, ECONOMY, NONE));
+        this.allWonders.add(new Wonder("Walhalla", ALLIED_CULTURES, STORIES_AND_MYTHS, new ArrayList<>(Arrays.asList(ARENA)), PALACE, MILITARY, MILITARY, MILITARY));
+        this.allWonders.add(new Wonder("Dragonship Ellidia", ALLIED_CULTURES, STORIES_AND_MYTHS, new ArrayList<>(Arrays.asList(NAVAL, NAVAL)), UNSYNERGIZED, MILITARY, ECONOMY, NONE));
         this.allWondersByName = new HashMap<>();
         for(Wonder w : allWonders)
         {
